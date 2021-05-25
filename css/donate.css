@@ -1,0 +1,505 @@
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  body {
+    font-family: sans-serif, Arial, Helvetica;
+    color: black;
+    font-size: 14px;
+    background-color: #fff ;
+
+    margin: 0; }
+
+    
+    .container{
+        display: flex;
+        padding: 2% 10% 2% 10%;
+    }
+    .donate{
+        /* max-width: 50%; */
+        padding-right: 10%;
+        text-align: justify;
+    }
+    .donate .p{
+        
+        font-size: 15px;
+    }
+    
+    
+  
+  input, textarea, select, button {
+    font-family: "Muli-Regular";
+    color: black;
+    font-size: 13px; }
+  
+  p, h2, h3, h4, h5, h6, ul {
+    margin: 0; }
+  
+  img {
+    max-width: 100%;
+     }
+  
+  
+  
+  a:hover {
+    text-decoration: none; }
+  
+  :focus {
+    outline: none; }
+  .checkbox {
+    position: relative; }
+    .checkbox label {
+      padding-left: 22px;
+      cursor: pointer; }
+    .checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    .checkbox input:checked ~ .checkmark:after {
+      display: block; }
+  
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 13px;
+    border-radius: 2px;
+    background-color: #0f0f0f;
+    border: 1px solid rgb(17, 16, 16);
+    font-family: Material-Design-Iconic-Font;
+    color: #000;
+    font-size: 10px;
+    font-weight: bolder; }
+    .checkmark:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      content: '\f26b'; }
+
+
+      .donation-container {
+      
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 10%;
+      }
+      
+      .donation-box {
+        width: 490px;
+        height: 456px;
+        background-color: #F5F5F5;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+      }
+      
+      .donation-box .title {
+        background-color: #11999E;
+        width: 100%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: white;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 15px;
+      }
+      
+      .donation-box .donate-button {
+        background-color: #11999E;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 18px;
+        bottom: 0px;
+        position: absolute;
+        cursor: pointer;
+        font-weight: 800;
+      }
+      
+      .donation-box .fields {
+        width: 59%;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 15px;
+      }
+      
+      .donation-box .fields input {
+        width: 90%;
+        font-size: 17px;
+        padding: 10px;
+        border-radius: 4px;
+        border-width: 0px;
+        color: #5C5C5C;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-bottom: 10px;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      ::-webkit-input-placeholder {
+         color: #cdcdcd;
+         font-size: 15px;
+      }
+      
+      :-moz-placeholder { /* Firefox 18- */
+         color: #cdcdcd;
+         font-size: 15px;
+      }
+      
+      ::-moz-placeholder {  /* Firefox 19+ */
+         color: #cdcdcd;
+         font-size: 15px; 
+      }
+      
+      :-ms-input-placeholder {  
+         color: #cdcdcd;
+         font-size: 15px;
+      }
+      
+      .donation-box .amount {
+        width: 30%;
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+      }
+      
+      .donation-box .amount .button {
+        width: 100%;
+        background-color: gray;
+        margin-bottom: 10px;
+        text-align: center;
+        color: white;
+        padding: 15px 0px 15px 0px;
+        border-radius: 4px;
+        font-size: 20px;
+        cursor: pointer;
+        
+        -webkit-transition: 400ms background-color;
+        -moz-transition: 800ms opacity, 800ms right;
+        -ms-transition: 800ms opacity, 800ms right;
+        -o-transition: 800ms opacity, 800ms right;
+        transition: 200ms background-color;
+      }
+      
+      .donation-box .amount .button:hover {
+        background-color: #393939;
+      }
+      
+      .donation-box .amount .button.selected {
+        background-color: #393939;
+      }
+      
+      .donation-box .amount .button input {
+        min-width: 34px;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        border-bottom: 2px dashed white;
+        -webkit-font-smoothing: antialiased;
+        
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+      }
+      
+      .set-amount {
+        max-width: 96px;
+      }
+      
+      .switch {
+        position: absolute;
+        top: 190px;
+        left: 15px;
+        margin: 20px auto;
+        height: 26px;
+        width: 58.5%;
+        background: white;
+        border-radius: 3px;
+      }
+      
+      .switch-label {
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 49%;
+        line-height: 26px;
+        font-size: 11px;
+        color: #5C5C5C;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .switch-label:active {
+        font-weight: bold;
+      }
+      
+      .switch-label-off {
+        padding-left: 2px;
+      }
+      
+      .switch-label-on {
+        padding-right: 2px;
+      }
+      
+      .switch-input {
+        display: none;
+      }
+      .switch-input:checked + .switch-label {
+        font-weight: bold;
+        color: white;
+        
+        -webkit-transition: 0.15s ease-out;
+        -moz-transition: 0.15s ease-out;
+        -o-transition: 0.15s ease-out;
+        transition: 0.15s ease-out;
+      }
+      .switch-input:checked + .switch-label-on ~ .switch-selection {
+        left: 144px;
+      }
+      
+      .switch-selection {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 2px;
+        left: 2px;
+        width: 49%;
+        height: 22px;
+        background: #65bd63;
+        border-radius: 3px;
+        background-color: #11999E;
+        
+        -webkit-transition: left 0.15s ease-out;
+        -moz-transition: left 0.15s ease-out;
+        -o-transition: left 0.15s ease-out;
+        transition: left 0.15s ease-out;
+      }
+      
+      .checkboxes {
+        position: absolute;
+        top: 242px;
+        left: 13px;
+      }
+      
+      .checkboxes label {
+        position: relative;
+        top: -8px;
+        font-size: 13px;
+        color: gray;
+      }
+      
+      .checkbox {
+        -webkit-appearance: none;
+        background-color: #fafafa;
+        border: 1px solid #11999E;
+        padding: 9px;
+        border-radius: 3px;
+        display: inline-block;
+        position: relative;
+        
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+      }
+      
+      .checkbox:active, .checkbox:checked:active {
+        
+      }
+      
+      .checkbox:checked {
+        background-color: #11999E;
+        border: 1px solid #11999E;
+        color: white;
+      }
+      
+      .checkbox:checked:after {
+        content: '\2714';
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        color: white;
+      }
+      
+      .confirm {
+        display: none;
+        position: absolute;
+        top: 335px;
+        left: 15px;
+        right: 15px;
+        font-size: 16px;
+        
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+      }
+      
+      .confirm i {
+        font-weight: bold;
+        text-decoration: underline;
+        font-style: normal;
+      }
+
+      
+.carousel-wrapper{
+  height:400px;
+  position:relative;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  background-color: #ffdecf;
+}
+
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  /* left:-30px; */
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+  right:50px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+
+
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 1;
+      opacity: 1;
+    background:url('https://jnj-content-lab.brightspotcdn.com/dims4/default/4f82fe4/2147483647/strip/true/crop/1440x666+0+0/resize/1440x666!/quality/90/?url=http%3A%2F%2Fjnj-brightspot.s3.amazonaws.com%2F82%2F87%2F1f02f86a4ddfb68d44840e7d8cf5%2Flede-doctorfrontlineschina.jpg');
+    background-size:cover;
+    }
+  .item-2{
+    background:url('https://www.thestatesman.com/wp-content/uploads/2020/06/UNI.jpg');
+     background-size:cover;
+  }
+  .item-3{
+    background:url('https://s.abcnews.com/images/International/coronavirus-chinese-medical-experts-in-italy-gty-jc-200318_hpMain_16x9_992.jpg');
+     background-size:cover;
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 1;
+      opacity: 1;
+    }
+  
+ 
+
+
+      
+  
+  /* @media (max-width: 991px) {
+    .inner {
+      min-width: 768px; } } */
+  @media (max-width: 767px) {
+    .inner {
+      min-width: auto;
+     
+      padding-top: 0;
+      padding-bottom: 0; }
+  
+    form {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+      @media (max-width: 800px) {
+        .container{
+          display: block;
+        }
+        .donate{
+          max-width: 100%;
+          text-align: center;
+          padding-right: 0;
+          padding-bottom: 5%;
+        }
+       
+      }
+  
+
+      @media (max-width: 600px){
+        .donation-box {
+          width: 90%;
+        }
+        .switch-input:checked + .switch-label-on ~ .switch-selection {
+          left: 50%;
+        }
+      }
+  /*# sourceMappingURL=style.css.map */
+  

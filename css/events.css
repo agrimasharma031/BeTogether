@@ -1,0 +1,160 @@
+/* 
+    ================================
+        Best Viewed In Full Page
+    ================================
+*/
+
+/* Hover over a card to flip, can tab too. */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* default */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color:  #fff;
+  font-family: sans-serif, Arial, Helvetica;
+ 
+}
+
+.main{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.event{
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+
+.event1{
+  margin-right: 10px;
+  
+}
+
+.event1 section{
+  width: 650px;
+}
+.heading{
+  position: relative;
+margin-left: 13.5%;
+width: 75%;
+text-align: center;
+}
+
+.heading h1{
+  font-size: 50px;
+font-family: sans-serif, Arial, Helvetica;
+font-style: normal;
+font-weight: 500;
+line-height: 1;
+text-transform: uppercase;
+margin-bottom: 3%;
+margin-top: 2%;
+color: black;
+}
+
+.heading p{
+  font-size: 26px;
+margin-top: 2%;
+display: block;
+font-family: sans-serif, Arial, Helvetica;
+font-style: normal;
+font-weight: 300;
+
+  margin-top: 3%;
+  margin-bottom: 5%;
+margin-top: 0px;
+line-height: 1.2;
+text-transform: none;
+
+}
+
+hr.style12 { 
+border: 0; 
+height: 1px; 
+background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+
+:root{
+  --bg: black;
+  --title: #11999E;
+  --para-text: rgba(0,0,0,0.67);
+  --title-font: 'Josefin Slab', serif;
+  --text-font: 'PT Serif', Serif;
+  --width: 20em;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--title);
+  text-transform: capitalize;
+  font-family: var(--title-font);
+}
+
+section,
+aside,
+article,
+div,
+img{
+  box-sizing: border-box;
+}
+section img{
+  width: 100%;
+}
+section{
+  width: var(--width);
+  background:   #fafafa;
+  margin-right: 10px
+
+  ;
+  padding: 20px;
+}
+section h3{
+  font-size: calc(var(--width)/10);
+}
+section p{
+  font-family: var(--text-font);
+  color: var(--para-text);
+  font-size: calc(var(--width)/20);
+}
+.date{
+  font-size: calc(var(--width)/25);
+}
+h1{
+  color: #fff;
+}
+
+section a{
+  text-decoration: none;
+  color: var(--bg);
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: calc(var(--width)/23);
+}
+
+@media (max-width:1000px){
+  .event{
+    flex-direction: column;
+  }
+  section{
+    width: auto;
+  }
+  .event1 section{
+    width: auto;
+  }
+}

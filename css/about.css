@@ -1,0 +1,182 @@
+/* default */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.aboutBe{
+    display: flex;
+    background-color: wheat;
+}
+.intro{
+    padding: 240px;
+    background: url('../Images/about.jpg');
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+p.inner{
+    position: absolute;
+    top: 5.7em;
+    text-align: center;
+    color:black;
+    font-size: 90px;
+    background-color: rgba(230, 222, 222, 0.5);
+    padding: 5px 10px 5px 10px ;
+    margin-top: -20%;
+    margin-left: 15%;
+    max-width: fit-content;
+}
+
+.inner-2{
+    text-align: center;
+    font-size: 60px ;
+    padding: 1% ;
+    margin: 2%;
+}
+
+.inner-3{
+    text-align: center;
+    font-size:60px ;
+    margin-top: 40px;
+    padding: 50px ;
+}
+
+.inner-4{
+    text-align: center;
+    font-size: 60px;
+    margin: 2%;
+}
+
+.divs{
+    display: flex;
+}
+
+.div-1{
+    width: 22.5%;
+    
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color:#11999E;
+    margin: 20px 24px 20px 200px;
+}
+
+.div-2{
+    width: 22.5%;
+    
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: #11999E;
+    margin: 20px 20px 20px 24px;
+}
+
+.div-3{
+    width: 22.5%;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: #11999E ;
+    margin: 20px 200px 20px 20px;
+}
+
+.div-left{
+    width: 22.5%;
+    float: left;
+    padding: 50px;
+    margin: 20px 24px 20px 150px;
+}
+
+.div-right{
+    padding: 50px;
+    margin-right: 150px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.button {
+    background: gray ;
+    background-image: -webkit-linear-gradient(top,white, white);
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -ms-linear-gradient(top, white, white);
+    background-image: -o-linear-gradient(top, white ,white);
+    background-image: linear-gradient(to bottom, white, white );
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 8px;
+    font-family: Arial;
+    color:  #11999E;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    }
+  
+  .button:hover {
+    background: #FFE8E6;
+    background-image: -webkit-linear-gradient(top,#FFE8E6,  #FFE8E6);
+    background-image: -moz-linear-gradient(top,#FFE8E6,#FFE8E6);
+    background-image: -ms-linear-gradient(top,#FFE8E6,#FFE8E6);
+    background-image: -o-linear-gradient(top, #FFE8E6, #FFE8E6);
+    background-image: linear-gradient(to bottom, #FFE8E6, #FFE8E6);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a{
+      text-decoration: none;
+      color: #11999E;
+  }
+
+@media (max-width: 800px){
+
+    .divs{
+        flex-direction: column;
+    }
+    .div-1, .div-2, .div-3{
+        margin: 20px 5% 20px 5%;
+        width: auto;
+    }
+
+    .div-left{
+        padding: 0;
+        width: auto;
+        margin:     20px 24px 20px 10px;
+    
+    }
+    .div-right{
+        margin-right: 0;
+    }
+
+    .inner-4{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1300px){
+    p.inner{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .aboutBe{
+        display: block;
+    }
+    .div-left{
+        margin-left: 30%;
+    }
+}
+

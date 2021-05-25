@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+  background-color:#fff;
+ 
+  -webkit-font-smoothing: antialiased;
+}
+.get-involved{
+  display: flex;
+justify-content: center;
+margin-bottom: 1%;
+margin-top: 5%;
+  
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  
+}
+
+.heading {
+  display: flex;
+justify-content: center;
+margin-bottom:2%;
+  
+  /* margin: 2% 33% 2% 33%; */
+}
+.heading h3{
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+  hr.style12 { 
+  border: 0; 
+  height: 1px; 
+  width: 80%;
+  margin-left: 10%;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+.box{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: var(--spacing-l); 
+  grid-row-gap: var(--spacing-l);
+  max-width: 100%;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 10% ;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+img:hover {
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Images/event1.jpg');
+  opacity: 0.7;
+  
+}
+.bottom-left .bottom-right .top-left .top-right:hover {
+  cursor: pointer;
+}
+
+
+.box .bottom-right {
+  position: absolute;
+  bottom: 15%;
+  right: 25%;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+}
+.box .bottom-left {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 4rem;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+}
+.box .top-right {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  color: white;
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+}
+.box .top-left {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+}
+
+@media only screen and (max-width: 700px) {
+  .box{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box .top-right {
+    top: 38%;
+right: 45%;
+font-size: 3rem;
+  }
+  .box .top-left{
+    top: 13%;
+left: 40%;
+font-size: 3rem;
+  }
+
+  .box .bottom-left{
+    bottom: 37%;
+left: 40%;
+font-size: 3rem;
+  }
+   
+  .box .bottom-right{
+    bottom: 12%;
+    left: 40%;
+    font-size: 3rem;
+    
+  }
+}
+@media only screen and (max-width: 800px) {
+  .box .top-left,.box .top-right,.box .bottom-left, .box .bottom-right {
+    font-size: 2.5rem;
+  }
+}
+
+/* @media only screen and (max-width: 800px) {
+  .box .top-right{
+    top: 35%;
+right: 40%;
+  }
+} */
+
+@media only screen and (max-width: 700px) {
+  .heading h3{
+    font-size: 0.9rem;
+  }
+  .get-involved{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .heading h3{
+    font-size: 0.5rem;
+  }
+  .get-involved{
+    font-size: 0.8rem;
+  }
+  .box .top-right{
+    top: 35%;
+right: 40%;
+  }
+  .box .bottom-left{
+    left: 35%;
+  }
+  .box .top-left{
+    top: 11%;
+left: 36%;
+  }
+
+  .box .bottom-right{
+    
+    bottom: 10%;
+left: 37%;
+  }
+}

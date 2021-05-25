@@ -1,0 +1,232 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+	background-color: #fff ;
+	font-family: sans-serif, Arial, Helvetica;
+}
+
+.container {
+    display: flex;
+    padding:  2% 2% 2% 5%;
+}
+
+.sample{
+    color: black;
+    max-width: 70%;
+	padding-right: 4%;
+	margin-bottom: 10%;
+	text-align: justify;
+}
+
+.sample h1,h2, p{
+    padding-bottom: 15px;
+}
+.sample ul li{
+    padding-bottom: 5px;
+}
+
+
+.form-style-3{
+	max-width: 450px;
+	font-family: sans-serif, Arial, Helvetica;
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+}
+.form-style-3 label > span{
+	float: left;
+	width: 100px;
+	color: #4d77b1;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #d2e3ff;
+	padding: 20px;
+	background: #b7d8ec;
+	box-shadow: inset 0px 0px 15px #FFE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+.form-style-3 fieldset legend{
+	color: #78b1c9;
+	border-top: 1px solid #d2e3ff;
+	border-left: 1px solid #d2e3ff;
+	border-right: 1px solid #d2e3ff;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #f4f9ff;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #eeeff1;
+	-moz-box-shadow:-0px -1px 2px #eeeff1;
+	-webkit-box-shadow:-0px -1px 2px #eeeff1;
+	font-weight: normal;
+	font-size: 12px;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #6e7ba0;
+	outline: none;
+	color: #6e7ba0;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #6e7ba0;
+	-moz-box-shadow: inset 1px 1px 4px #6e7ba0;
+	-webkit-box-shadow: inset 1px 1px 4px #6e7ba0;
+	background: #b3bfdf;
+	width:50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: #4a519b;
+	border: 1px solid #4a519b;
+	padding: 5px 15px 5px 15px;
+	color: #e0e4f0;
+	box-shadow: inset -1px -1px 3px #6289ff;
+	-moz-box-shadow: inset -1px -1px 3px #6289ff;
+	-webkit-box-shadow: inset -1px -1px 3px #6289ff;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+.required{
+	color:red;
+	font-weight:normal;
+}
+.form-style-3  input[type=submit], .form-style-3  input[type=button] :hover {
+    cursor: pointer;
+}
+
+
+.carousel-wrapper{
+	height:400px;
+	position:relative;
+	margin:0 auto;
+  }
+  .carousel-item{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	padding:25px 50px;
+	opacity:0;
+	transition: all 0.5s ease-in-out;
+	background-color: #ffdecf;
+  }
+  
+  .arrow{
+	border: solid black;
+	  border-width: 0 3px 3px 0;
+	  display: inline-block;
+	  padding: 12px;
+  }
+  
+  .arrow-prev{
+	/* left:-30px; */
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+	right:50px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%) rotate(-45deg);
+	}
+  
+  .light{
+	color:white;
+  }
+  
+  
+  @media (max-width: 480px) {
+		.arrow, .light .arrow {
+		  background-size: 10px;
+		  background-position: 10px 50%;
+		}
+	  }
+  }
+  
+  
+	
+	/*Select every element*/
+	[id^="item"] {
+		display: none;
+	  }
+	
+	.item-1 {
+		z-index: 1;
+		opacity: 1;
+	  background:url('https://www.weallstandtall.com/wp-content/uploads/2019/05/o-STUDENTS-VOLUNTEERING-facebook.jpg');
+	  background-size:cover;
+	  }
+	.item-2{
+	  background:url('https://intermountainhealthcare.org/-/media/images/modules/blog/posts/2019/03/volunteering-is-good-for-you-and-your-kids.jpg?la=en&h=504&w=896&mw=896&hash=12B60E2046185023A7BB36AF203332C86DB664AE');
+	   background-size:cover;
+	}
+	.item-3{
+	  background:url('https://i.guim.co.uk/img/media/bbfde8dfc6100b17b163ecab0cfe9c1cd4ac2344/0_196_6048_3631/master/6048.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=972151acdc2c348af66e6ada508d03d5');
+	   background-size:cover;
+	}
+	
+	*:target ~ .item-1 {
+		opacity: 0;
+	  }
+	
+	#item-1:target ~ .item-1 {
+		opacity: 1;
+	  }
+	
+	#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+		z-index: 1;
+		opacity: 1;
+	  }
+	
+	
+@media only screen and (max-width: 850px) {
+	.pic .top-right {
+		top: 70%;
+	}
+	.container {
+		display: block;
+}
+.sample{
+max-width: 100%;
+margin-bottom: 5%;
+}
+
+.form-style-3{
+	margin-bottom: 5%;
+}
+}
+ 

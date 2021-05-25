@@ -1,0 +1,85 @@
+
+.carousel-wrapper{
+  height:400px;
+  position:relative;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  background-color: #ffdecf;
+}
+
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  /* left:-30px; */
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+  right:50px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 1;
+    opacity: 1;
+  background:url('https://images.unsplash.com/photo-1592392513912-fd639ff32e98?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxjb3ZpZCUyMDE5fGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background-size:cover;
+  }
+.item-2{
+  background:url('https://images.unsplash.com/photo-1598723106415-862ab917eb7c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTU1fHxjb3ZpZCUyMDE5fGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+   background-size:cover;
+}
+.item-3{
+  background:url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 1;
+    opacity: 1;
+  }
+}

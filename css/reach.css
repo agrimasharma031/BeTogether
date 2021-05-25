@@ -1,0 +1,115 @@
+
+
+/* default */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.intro{
+    padding: 200px;
+    background: url('../Images/reach.jpg');
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  
+p.inner{
+    position: relative;
+    text-align: center;
+    color:black;
+    font-size: 90px;
+    background-color: rgba(230, 222, 222, 0.6);
+    
+
+}
+
+.inner-1{
+    margin-top: 1% ;
+    background-color: wheat;
+    font-size: 40px;
+    padding: 65px 190px 65px 190px;
+    text-align: center;
+    font-weight: 550;
+   }
+   
+
+.inner-2{
+    text-align: center;
+    font-size: 40px ;
+    padding: 1% 0 1% 0;
+    margin: 1%;
+}
+
+.stats{
+    display: flex;
+    margin-top: 1%;
+    background-color: white;
+}
+
+.div-1{
+    width: 33.33%;
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #11999E;
+}
+
+.div-2{
+    width: 33.33%;
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #11999E;
+}
+
+.div-3{
+    width: 33.33%;
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #11999E;
+}
+
+
+.map{
+    margin-top: 80px;
+    padding-left: 14%;
+    margin-bottom: 10%;
+}
+
+@media (max-width:900px){
+    .stats{
+        display: block;
+    }
+
+    .div-1, .div-2, .div-3{
+        width: 100%;
+    }
+
+    .inner-1{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:600px){
+    p.inner{
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+}
+@media (max-width:600px){
+    p.inner{
+        font-size: 70px;
+        display: none;
+    }
+}

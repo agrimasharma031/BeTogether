@@ -1,0 +1,260 @@
+/* default */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-wrapper{
+  height: 250px;
+  position: relative;;
+  width:800px;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  
+}
+
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+  right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+.intro{
+  padding: 230px;
+  background: url('../Images/mask.jpg');
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+p.inner{
+  position: absolute;
+  top: 4.7em;
+  text-align: center;
+  color:black;
+  font-size: 90px;
+  background-color: rgba(230, 222, 222, 0.6);
+  padding: 0px;
+  margin-top: -16%;
+  margin-left: 16%;
+}
+
+.inner-1{
+ margin-top: 30px ;
+ background-color: wheat;
+ font-size: 30px;
+ padding: 65px 190px 65px 190px;
+ text-align: justify;
+ font-weight: 545;
+}
+
+.inner-2{
+  text-align: center;
+  font-size: 40px ;
+  padding: 2% 0 2% 0;
+  margin: 2%;
+}
+
+p.inner-3{
+  text-align: center;
+  font-size: xxx-large;
+  font-weight: 540;
+  padding: 30px 0 30px 0 ;
+}
+
+.partner-us{
+  display: flex;
+}
+
+.list{
+  margin-left: 10%;
+  padding: 0px 100px 50px 50px;
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+  font-size: large;
+  position: relative;
+  margin-top: 0px;
+  
+}
+
+.form{
+  padding: 50px 50px 50px 50px;
+  background-color: rgba(230, 222, 222, 0.6);
+  width: 50%;
+  width: 30%;
+  height: fit-content;
+  position: relative;
+ 
+  margin-bottom: 50px ;
+  margin-top: 0px;
+}
+
+.item{
+  font-size: x-large;
+  color: #11999E;
+  font-weight: 550;
+}
+
+.input-field{
+  width: 100%;
+  height: 40px;
+  padding : 3px 10px 3px 10px;
+  border: 1px solid #777777;
+  border-radius : 5px; 
+  outline: none;
+}
+
+
+.area-field{
+    height: 120px;
+    padding-top: 10px;
+}
+
+
+.button {
+  background: #11999E;
+  background-image: -webkit-linear-gradient(top, #11999E, #11999E);
+  background-image: -moz-linear-gradient(top, #11999E, ##11999E);
+  background-image: -ms-linear-gradient(top, #11999E, ##11999E);
+  background-image: -o-linear-gradient(top, #11999E, ##11999E);
+  background-image: linear-gradient(to bottom, #11999E, #11999E);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  
+  }
+
+.button:hover {
+  background: #db4d4d;
+  background-image: -webkit-linear-gradient(top, #db4d4d,  #db4d4d);
+  background-image: -moz-linear-gradient(top, #db4d4d,  #db4d4d);
+  background-image: -ms-linear-gradient(top, #db4d4d,  #db4d4d);
+  background-image: -o-linear-gradient(top, #db4d4d,  #db4d4d);
+  background-image: linear-gradient(to bottom, #db4d4d,  #db4d4d);
+  text-decoration: none;
+}
+
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+   
+    
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url('../Images/partner1.png');
+  background-size:cover;
+  }
+.item-2{
+  background:url('../Images/partner2.png');
+   background-size:cover;
+}
+.item-3{
+  background:url('../Images/partner3.png');
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+
+
+  @media (max-width: 1200px) {
+    .carousel-wrapper {
+      width: 55%;
+  }
+
+  @media (max-width: 800px) {
+    .partner-us{
+      display: block;
+    }
+    .list{
+      width: auto;
+    }
+    .form{
+      width: auto;
+    }
+    .inner-1{
+      font-size: 23px;
+    }
+
+    p.inner{
+      display: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .inner-1{
+      padding: 65px 100px 65px 100px;
+      font-size: 20px;
+    }
+  }
+
+
+
+
+

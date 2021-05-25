@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+    <link rel="stylesheet" href="../css/hamburger.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <title>Checkout</title>
+</head>
+<body>
+
+<div>
+    <p class="checkout">CHECKOUT DETAILS</p>
+</div>
+<center><hr id="rule"></center>
+
+<div class="forms">
+    
+    <div class="wrapper">
+        <div class="container">
+            <article class="part card-details">
+                <h1>
+                    Shipping Address Details
+                </h1>
+                <form action="" if="cc-form" autocomplete="off">
+                    <div class="group address">
+                        <label>Address </label>
+                        <input type="text" placeholder="Shipping Address">
+                    </div>
+                    <div class="group card-name">
+                        <label >Country</label>
+                        <input type="text" placeholder="Country Name">
+                    </div>
+                    <div class="group card-expiry">
+                        <div class="input-item expiry">
+                            <label for="expiry">City and State</label>
+                            <input type="text" class="month" placeholder="City">
+                            <input type="text" class="year" id="" placeholder="State">
+                        </div>
+                        <div class="input-item csv">
+                            <label for="csv">Pin Code</label>
+                            <input type="text" class="csv">
+                        </div>
+                    </div>
+                    <div class="grup submit-group">
+                        <span class="arrow"></span>
+                        
+                    </div>
+                </form>
+            </article>
+            <div class="part bg"></div>
+        </div>
+    </div>
+    
+
+    <div class="wrapper">
+        <div class="container">
+            <article class="part card-details">
+                <h1>
+                    Credit Card Details
+                </h1>
+                <form action="" if="cc-form" autocomplete="off">
+                    <div class="group card-number">
+                        <label for="first">Card Number</label>
+                        <input type="text" id="first" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="second" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="third" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="fourth" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                    </div>
+                    <div class="group card-name">
+                        <label for="name">Name On Card</label>
+                        <input type="text" id="name" class="" type="text" maxlength="20" placeholder="Name Surname">
+                    </div>
+                    <div class="group card-expiry">
+                        <div class="input-item expiry">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" class="month" id="expiry" placeholder="02">
+                            <input type="text" class="year" id="" placeholder="2017">
+                        </div>
+                        <div class="input-item csv">
+                            <label for="csv">CSV No.</label><a href="#what">?</a>
+                            <input type="text" class="csv">
+                        </div>
+                    </div>
+                    <div class="grup submit-group">
+                        <span class="arrow"></span>
+                        
+                    </div>
+                </form>
+            </article>
+            <div class="part bg"></div>
+        </div>
+    </div>
+    
+</div>
+
+<a class="button" href="./products/products.html">Confirm Order</a>
+
+</body>
+</html>

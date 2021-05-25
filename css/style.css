@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* body */
+.body { 
+
+    background: white;
+    font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  /* .main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .mail{
+      display: flex;
+  }
+
+/* .home{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./Images/covid.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+} */
+
+.button {
+    background: #11999E;
+    background-image: -webkit-linear-gradient(top, #11999E, #11999E);
+    background-image: -moz-linear-gradient(top, #11999E, ##11999E);
+    background-image: -ms-linear-gradient(top, #11999E, ##11999E);
+    background-image: -o-linear-gradient(top, #11999E, ##11999E);
+    background-image: linear-gradient(to bottom, #11999E, #11999E);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    
+    }
+  
+  .button:hover {
+    background: #11999E;
+    background-image: -webkit-linear-gradient(top, #11999E,  #11999E);
+    background-image: -moz-linear-gradient(top, #11999E,  #11999E);
+    background-image: -ms-linear-gradient(top, #11999E,  #11999E);
+    background-image: -o-linear-gradient(top, #11999E,  #11999E);
+    background-image: linear-gradient(to bottom, #11999E,  #11999E);
+    text-decoration: none;
+  }
+
+  .form{
+    padding: 40px 65px 40px 50px;
+    background-color: rgba(230, 222, 222, 0.6);
+    width: 50%;
+    width: 30%;
+    height: fit-content;
+    margin-bottom: 50px ;
+    margin-top: 0px;
+    margin-left: 10%;
+    
+  }
+
+  .icons{
+      font-size: 50px;
+  }
+
+.intro{
+    padding: 180px;
+    background: url('../Images/contact.jpg');
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.info{
+    font-size: medium;
+    padding-left: 20px;
+    
+}
+
+  p.inner{
+    position: absolute;
+    top: 4.7em;
+    text-align: center;
+    color:black;
+    font-size: 90px;
+    background-color: rgba(230, 222, 222, 0.6);
+    padding: 0px;
+    margin-top: -20%;
+    margin-left: 16%;
+  }
+
+  .inner-2{
+    text-align: center;
+    font-size: 35px ;
+    padding: 1% 0 1% 0;
+    margin: 1%;
+  }
+
+  .color{
+    font-size: x-large;
+    color: #11999E;
+    font-weight: 550;
+  }
+
+  .reach{
+      font-size: large;
+      font-weight: 500;
+  }
+
+  .reach-1{
+      font-size: xx-large;
+      
+  }
+
+  .contact1{
+    position: absolute;
+    margin-left: 50%;
+    float: left;
+    padding: 0px 100px 10px 100px;
+  }
+
+  .input-field{
+    width: 100%;
+    height: 40px;
+    padding : 3px 10px 3px 10px;
+    border: 1px solid #777777;
+    border-radius : 5px; 
+    outline: none;
+  }
+  
+  
+  .area-field{
+      height: 120px;
+      padding-top: 10px;
+  }
+
+  .appeal{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+      
+  }
+
+  .donate{
+    position: relative;
+    float: right;
+    display: inline;
+  }
+
+  .myButton {
+	background: white;
+    background-image: -webkit-linear-gradient(top, white,white);
+    background-image: -moz-linear-gradient(top, white,white);
+    background-image: -ms-linear-gradient(top,white,white);
+    background-image: -o-linear-gradient(top,white, white);
+    background-image: linear-gradient(to bottom,white,white);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: black;
+    font-size: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    display: inline;
+    
+}
+.myButton:hover {
+	background: red;
+    background-image: -webkit-linear-gradient(top, red  red);
+    background-image: -moz-linear-gradient(top,red,  red);
+    background-image: -ms-linear-gradient(top, red,  red);
+    background-image: -o-linear-gradient(top, red,  red);
+    background-image: linear-gradient(to bottom,red,  red);
+    text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.user-1 {
+    position: relative;
+}
+
+.user-info{
+    position: absolute;
+    float: right;
+    display: inline;
+    padding: 20px;
+}
+.user-info1{
+    position: absolute;
+    float: right;
+    display: inline;
+    
+}
+
+.user-info1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.user-info1 a:hover{
+    text-decoration: underline;
+    transition:  all .3s;
+    color:darkcyan;
+}
+
+.first{
+    height: 70px;
+    width: 70px;
+}
+
+
+.shapes{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #2128bd;
+    overflow: hidden;
+}
+
+.shape{
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape .shape-1 {
+    background: #005ffe;
+    width: 650px;
+    height: 650px;
+    margin: -325px 0 0 -325px;
+}
+
+.shape .shape-2 {
+    background: #ffe5e3;
+    width: 440px;
+    height: 440px;
+    margin: -220px 0 0 -220px;
+}
+
+.shape .shape-3 {
+    background: #ffcc57;
+    width: 270px;
+    height: 270px;
+    margin: -135px 0 0 -135px;
+}
+
+.content{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    mix-blend-mode: screen;
+}
+.cursor{
+    position: fixed;
+    background: #2128bd;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    will-change: transform;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+::selection {
+    color: #fff;
+    background: #2128bd;
+
+}
+
+@media (max-width: 700px){
+    .vertical-bars{
+        display: none;
+    }
+    .banner-title{
+        margin: 80px 40px;
+
+    }
+    .banner-title h1{
+        font-size: 50px;
+    }
+    .navbar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .navbar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul a{
+        display: block;
+    }
+
+    .nav-links .btn {
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 850px){
+    .mail{
+        display: block;
+    }
+    .form{
+        width: auto;
+        margin-right: 10%;
+    }
+    .contact1{
+        margin-left: 0;
+        float: none;
+        position: relative;
+    }
+
+    .intro .inner{
+        position: unset;
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 50px;
+    }
+}
+@media (max-width: 550px){
+    .inner{
+        display: none;
+    }
+}
+
